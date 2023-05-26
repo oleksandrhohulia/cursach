@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cursova.css">
+    <link rel="icon" href="icon.svg">
+    <title>Основи JavaScript для створення інтерактивних елементів</title>
+</head>     
+    <body>
+        <header> 
+            <div class="top-nav element-animation ">
+                <div id="closednav"> 
+                    <a class="m-card card-golovna font-txt" href="index.html">Головна</a>
+                    <a class="m-card card-menu font-txt" href="javascript:void(0);" onclick="myFunction()">Меню</a>
+                </div>
+                <div id="links">
+                    <div class="flex wrap">
+                        <a href="page1.html" class="m-card font-txt">01. Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</a>
+                        <a href="page2.html" class="m-card font-txt">02. Основи JavaScript для створення інтерактивних елементів</a>
+                        <a href="page3.html" class="m-card font-txt">03. Валідація форм за допомогою JavaScript</a>
+                        <a href="page4.html" class="m-card font-txt">04. Створення спливаючих вікон та модальних вікон з використанням JavaScript</a>
+                        <a href="page5.html" class="m-card font-txt">05. Анімація елементів з використанням JavaScript</a>
+                        <a href="page6.html" class="m-card font-txt">06. Створення інтерактивних кнопок з використанням JavaScript</a>
+                        <a onclick="myFunction()" class="m-card">Х</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <main> 
+            <section class="section-m section-link">
+                <div class="card-holder flex wrap">
+                    <span class="font-h1 card card-basis25 green-card element-animation">02.</span>
+                    <h1 class="card card-basis75 violet-card font-h1 element-animation">Основи JavaScript<br>для створення<br>інтерактивних елементів</h1>
+                </div>
+                <div class="card-holder flex wrap card-basis100">
+                    <a href="#inv" class="card font-link-card card-basis25 element-animation">01.<br>Введення до JavaScript:<br>змінні, функції, умови</a>
+                    <a href="#dom" class="card font-link-card card-basis25 element-animation">02.<br>Маніпулювання DOM<br>(Document Object Model)<br>з використанням JavaScript</a>
+                    <a href="#rea" class="card font-link-card card-basis25 element-animation">03.<br>Реагування на події<br>користувача з допомогою JavaScript</a>
+                </div>
+            </section>
+    
+            <section id="inv" class="section-m flex wrap element-animation">
+                <div class="text-holder section-txt just"> 
+                    <h2 class="card-basis25 font-h2 element-animation ">Введення до JavaScript:<br>змінні, функції, умови</h2>
+                    <div class="card-basis25 font-txt"> 
+                        <p><strong>Змінні:</strong><br>Змінні в JavaScript використовуються для збереження інформації. Вони можуть містити числа, рядки, булеві значення та інші типи даних. Для оголошення змінної використовується ключове слово "var", "let" або "const". Наприклад:</p>
+                        <code class="color-green">var age = 25;
+    let name = "John";
+    const PI = 3.14;</code>
+                        <p><strong>Функції:</strong><br>Функції в JavaScript використовуються для організації блоків коду, які можуть бути викликані для виконання певних завдань. Функції можуть приймати параметри і повертати значення. Наприклад:</p>
+                        <code class="color-green">function add(a, b) {
+        return a + b;
+    }
+    
+    var result = add(2, 3); // result = 5</code>
+                        <p><strong>Умови:</strong><br>Умови в JavaScript використовуються для виконання певних дій в залежності від заданих умов. Найпоширенішими конструкціями умов є "if", "else if" та "else". Наприклад:</p>
+                        <code class="color-green">var age = 18;
+    
+    if (age &lt;18) {
+        console.log("Ви ще неповнолітній");
+    } else if (age &lt;=18 && age &lt;65) {
+        console.log("Ви дорослий");
+    } else {
+        console.log("Ви пенсіонер");
+    }</code>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="dom" class="section-m flex wrap element-animation">
+                <div class="text-holder section-txt just"> 
+                    <h2 class="card-basis25 font-h2 element-animation">Маніпулювання DOM<br>(Document Object Model)<br>з використанням JavaScript</h2>
+                    <div class="card-basis25 font-txt"> 
+                        <p>DOM - це структура, яка представляє HTML-документ у вигляді дерева об'єктів. JavaScript надає можливість маніпулювати цим деревом, змінювати елементи, їх властивості тастилі. Для доступу до елементів DOM використовуються методи та властивості JavaScript. Наприклад:</p>
+                        <code class="color-green">// Отримання посилання на елемент за його ідентифікатором
+    var element = document.getElementById("myElement");
+    
+    // Зміна текстового вмісту елемента
+    element.textContent = "Привіт, світ!";
+    
+    // Зміна стилю елемента
+    element.style.color = "red";</code>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="rea" class="section-m flex wrap element-animation">
+                <div class="text-holder section-txt just"> 
+                    <h2 class="card-basis25 font-h2 element-animation">Реагування на події користувача<br>з допомогою JavaScript</h2>
+                    <div class="card-basis25 font-txt"> 
+                        <p>JavaScript дозволяє реагувати на події, які виникають під час взаємодії користувача з веб-сайтом, такі як натискання кнопок, введення тексту, переміщення миші тощо. Для обробки подій використовуються обробники подій (event handlers) JavaScript. Наприклад:</p>
+                        <code class="color-green">// Отримання посилання на кнопку
+    var button = document.getElementById("myButton");
+    
+    // Додавання обробника події для натискання кнопки
+    button.addEventListener("click", function() {
+        console.log("Кнопку натиснуто!");
+    });</code>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+        <div class="flex just section-link element-animation">
+            <a href="page1.html" class="nav-card">←</a>
+            <a href="page3.html" class="nav-card font-txt">→</a>
+        </div>
+    
+        <footer>
+            <p>&copy; Гогуля О.Г / ВПВПС-20-3</p>
+        </footer>
+    
+        <script src="cursova.js"></script>
+    </body>
+    </html>
+    

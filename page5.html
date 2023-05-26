@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cursova.css">
+    <link rel="icon" href="icon.svg">
+    <title>Анімація елементів з використанням JavaScript</title>
+</head>
+<body>
+    <header> 
+        <div class="top-nav element-animation">
+            <div id="closednav"> 
+            <a class="m-card card-golovna font-txt" href="index.html"> Головна</a>
+            <a class="m-card card-menu font-txt" href="javascript:void(0);" onclick="myFunction()">Меню</a></div>
+            <div id="links">
+                    <div class="flex wrap">
+                    <a href="page1.html" class="m-card font-txt">01. Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</a>
+                    <a href="page2.html" class="m-card font-txt">02. Основи JavaScript для створення інтерактивних елементів</a>
+                    <a href="page3.html" class="m-card font-txt">03. Валідація форм за допомогою JavaScript</a>
+                    <a href="page4.html" class="m-card font-txt">04. Створення спливаючих вікон та модальних вікон з використанням JavaScript</a>
+                    <a href="page5.html" class="m-card font-txt">05. Анімація елементів з використанням JavaScript</a>
+                    <a href="page6.html" class="m-card font-txt">06. Створення інтерактивних кнопок з використанням JavaScript </a>
+                        <a onclick="myFunction()" class="m-card">Х</a>
+                </div>
+         </div>
+        </div>
+    </header>
+
+    <main> 
+        <section class="section-m section-link">
+
+            <div class="card-holder flex wrap ">
+            <span class="font-h1 card card-basis25 green-card element-animation">05.</span>
+            <h1 class=" card card-basis75 violet-card font-h1 element-animation">Анімація елементів <br> з використанням JavaScript</h1>
+            </div>
+            <div class="card-holder flex wrap card-basis100"  >
+                <a href="#an" class="card font-link-card card-basis25 element-animation">01. <br> Використання CSS-класів <br> для створення <br> анімаційних ефектів</a>
+                <a href="#cls" class="card font-link-card card-basis25 element-animation ">02. <br> Використання JavaScript <br> для керування класами <br> та запуску анімацій</a>
+                <a href="#ez" class="card font-link-card card-basis25 element-animation">03. <br> Створення простої анімації <br> переходу <br> між станами елемента:</a>
+
+            </div>
+        </section >
+
+<section id="an" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just"> 
+       <h2 class="card-basis25 font-h2 element-animation" >  Використання CSS-класів <br> для створення <br> анімаційних ефектів</h2>
+       <div class="card-basis25 font-txt"> 
+        <p> <strong> Використання CSS-класів для створення анімаційних ефектів:</strong> <br>
+            Анімаційні ефекти можна створити за допомогою CSS-класів, використовуючи CSS-властивості, такі як transition, transform, opacity та інші. Наприклад, можна визначити клас з анімацією для плавного зміщення елемента:</p>
+        <code class="color-green"> 
+            .transition-animation {
+                transition: transform 0.3s ease;
+              }
+              
+              .transition-animation:hover {
+                transform: translateX (50px);
+              }
+        </code>
+    </div>
+</div>
+</section>
+
+<section id="cls" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just"> 
+       <h2 class="card-basis25 font-h2 element-animation" >  Використання JavaScript <br> для керування класами <br> та запуску анімацій</h2>
+       <div class="card-basis25 font-txt"> 
+        <p><strong>Використання JavaScript для керування класами та запуску анімацій:</strong> <br>
+            За допомогою JavaScript можна керувати додаванням та видаленням класів, що містять анімаційні ефекти. Це дозволяє контролювати початок та закінчення анімації за допомогою подій або програмованого втручання. Наприклад, при кліку на кнопку можна додати клас для анімації зміни розміру елемента:</p>
+        <code class="color-green"> 
+            var button = document.getElementById ("myButton");
+            var element = document.getElementById ("myElement");
+            
+            button.addEventListener ("click", function() {
+              element.classList.add ("scale-animation");
+              
+              // Через певний час видалити клас для закінчення анімації
+              setTimeout (function() {
+                element.classList.remove ("scale-animation");
+              }, 1000);
+            });
+        </code>
+    </div>
+</div>
+</section>
+
+<section id="ez" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just"> 
+       <h2 class="card-basis25 font-h2 element-animation" >  Використання JavaScript <br> для керування класами <br> та запуску анімацій</h2>
+       <div class="card-basis25 font-txt"> 
+        <p><strong>Створення простої анімації переходу між станами елемента:</strong> <br>
+            Для створення простої анімації переходу між станами елемента можна використовувати класи для задання початкових та кінцевих значень CSS-властивостей. Наприклад, для анімації зміни фонового кольору елемента при наведенні:</p>
+        <code class="color-green"> 
+            .transition-animation {
+                transition: background-color 0.3s ease;
+              }
+              
+              .transition-animation:hover {
+                background-color: red;
+              }
+        </code>
+        <p> Використовуючи JavaScript, можна додати цей клас до елемента при наведенні, а потім видалити його при знятті курсора:</p>
+        <code class="color-green">var element = document.getElementById ("myElement");
+
+            element.addEventListener ("mouseover", function() {
+              element.classList.add ("transition-animation");
+            });
+            
+            element.addEventListener ("mouseout", function() {
+              element.classList.remove ("transition-animation");
+            });</code>
+    </div>
+</div>
+</section>
+
+
+    </main>
+    
+ <div class="flex just section-link element-animation">
+    <a href="page4.html" class="nav-card ">←</a>
+       
+        <a href="page6.html" class="nav-card font-txt"> → </a>
+       
+ </div>
+
+<footer>
+<p> &copy; Гогуля О.Г / ВПВПС-20-3</p>
+</footer>
+
+<script src="cursova.js"></script>
+</body>
+</html>

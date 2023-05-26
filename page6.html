@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cursova.css">
+    <link rel="icon" href="icon.svg">
+    <title>Створення інтерактивних кнопок з використанням JavaScript</title>
+</head>
+<body>
+    <header> 
+        <div class="top-nav element-animation">
+            <div id="closednav"> 
+            <a class="m-card card-golovna font-txt" href="index.html"> Головна</a>
+            <a class="m-card card-menu font-txt" href="javascript:void(0);" onclick="myFunction()">Меню</a></div>
+            <div id="links">
+                    <div class="flex wrap">
+                    <a href="page1.html" class="m-card font-txt">01. Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</a>
+                    <a href="page2.html" class="m-card font-txt">02. Основи JavaScript для створення інтерактивних елементів</a>
+                    <a href="page3.html" class="m-card font-txt">03. Валідація форм за допомогою JavaScript</a>
+                    <a href="page4.html" class="m-card font-txt">04. Створення спливаючих вікон та модальних вікон з використанням JavaScript</a>
+                    <a href="page5.html" class="m-card font-txt">05. Анімація елементів з використанням JavaScript</a>
+                    <a href="page6.html" class="m-card font-txt">06. Створення інтерактивних кнопок з використанням JavaScript </a>
+                        <a onclick="myFunction()" class="m-card">Х</a>
+                </div>
+         </div>
+        </div>
+    </header>
+
+    <main> 
+        <section class="section-m section-link">
+
+            <div class="card-holder flex wrap  ">
+            <span class="font-h1 card card-basis25 green-card element-animation">06.</span>
+            <h1 class=" card card-basis75 violet-card font-h1 element-animation">Cтворення <br> інтерактивних кнопок <br> з використанням JavaScript</h1>
+            </div>
+            <div class="card-holder flex wrap card-basis100"  >
+                <a href="#btn" class="card font-link-card card-basis25 element-animation ">01. <br> Створення кнопки </a>
+                
+
+            </div>
+        </section >
+
+<section id="btn" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just"> 
+       <h2 class="card-basis25 font-h2 element-animation" >  Створення <br> кнопки</h2>
+       <div class="card-basis25 font-txt"> 
+        <p> <strong> Використання CSS-класів для створення анімаційних ефектів:</strong> <br>
+            Анімаційні ефекти можна створити за допомогою CSS-класів, використовуючи CSS-властивості, такі як transition, transform, opacity та інші. Наприклад, можна визначити клас з анімацією для плавного зміщення елемента:</p>
+            <p>Додавання інтерактивності до кнопки за допомогою JavaScript:
+                За допомогою JavaScript можна додати реакцію на події, що відбуваються з кнопкою, такі як натискання, наведення курсора, відпускання тощо. Для цього можна використовувати методи addEventListener() та removeEventListener(). Наприклад:</p>
+        <code class="color-green"> 
+            var button = document.getElementById("myButton");
+
+            button.addEventListener("click", function() {
+              // Виконати певні дії при натисканні на кнопку
+              console.log("Кнопка була натиснута!");
+            });
+        </code>
+        <p>міна стилів кнопки при наведенні курсора миші:
+            Для зміни стилів кнопки при наведенні курсора миші можна використовувати події mouseover та mouseout. Наприклад:</p>
+        <code class="color-green"> button.addEventListener ("mouseover", function() {
+            // Змінити стилі кнопки при наведенні
+            button.style.backgroundColor = "red";
+            button.style.color = "black";
+          });
+          
+          button.addEventListener ("mouseout", function() {
+            // Повернути початкові стилі кнопки при знятті курсора
+            button.style.backgroundColor = "blue";
+            button.style.color = "white";
+          });</code>
+          <p>Цей код змінить колір фону та тексту кнопки при наведенні курсора на неї, а потім поверне початкові стилі при знятті курсора. Це додасть інтерактивність до кнопки, показуючи користувачеві візуальний зворотний зв'язок.</p>
+    </div>
+</div>
+</section>
+
+
+    </main>
+    
+ <div class="flex just section-link element-animation">
+    <a href="page5.html" class="nav-card ">←</a>
+       
+        <a href="index.html" class="nav-card font-txt"> → </a>
+       
+ </div>
+
+<footer>
+<p> &copy; Гогуля О.Г / ВПВПС-20-3</p>
+</footer>
+
+<script src="cursova.js"></script>
+</body>
+</html>

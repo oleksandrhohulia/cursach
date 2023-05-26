@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cursova.css">
+    <link rel="icon" href="icon.svg">
+    <title>Створення спливаючих вікон та модальних вікон з використанням JavaScript</title>
+</head>
+<body>
+    <header> 
+        <div class="top-nav element-animation">
+            <div id="closednav"> 
+            <a class="m-card card-golovna font-txt" href="index.html"> Головна</a>
+            <a class="m-card card-menu font-txt" href="javascript:void(0);" onclick="myFunction()">Меню</a></div>
+            <div id="links">
+                    <div class="flex wrap">
+                    <a href="page1.html" class="m-card font-txt">01. Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</a>
+                    <a href="page2.html" class="m-card font-txt">02. Основи JavaScript для створення інтерактивних елементів</a>
+                    <a href="page3.html" class="m-card font-txt">03. Валідація форм за допомогою JavaScript</a>
+                    <a href="page4.html" class="m-card font-txt">04. Створення спливаючих вікон та модальних вікон з використанням JavaScript</a>
+                    <a href="page5.html" class="m-card font-txt">05. Анімація елементів з використанням JavaScript</a>
+                    <a href="page6.html" class="m-card font-txt">06. Створення інтерактивних кнопок з використанням JavaScript </a>
+                        <a onclick="myFunction()" class="m-card">Х</a>
+                </div>
+         </div>
+        </div>
+    </header>
+
+    <main> 
+        <section class="section-m section-link">
+
+            <div class="card-holder flex wrap ">
+            <span class="font-h1 card card-basis25 green-card element-animation">04.</span>
+            <h1 class=" card card-basis75 violet-card font-h1 element-animation">Створення спливаючих вікон <br> та модальних вікон  <br>  з використанням JavaScript</h1>
+            </div>
+            <div class="card-holder flex wrap card-basis100"  >
+                <a href="#mod" class="card font-link-card card-basis25 element-animation ">01. <br> Визначення спливаючих вікон <br> та модальних вікон</a>
+            </div>
+        </section >
+
+<section id="mod" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just"> 
+       <h2 class="card-basis25 font-h2 element-animation" > Визначення <br> спливаючих вікон <br> та модальних вікон</h2>
+       <div class="card-basis25 font-txt"> 
+        <p> Cпливаючі вікна та модальні вікна - це елементи веб-сайту, які з'являються на екрані користувача поверх основного вмісту сторінки. Вони використовуються для показу додаткової інформації, повідомлень, форм або будь-якого іншого контенту, який потребує особливої уваги користувача.
+            Використання JavaScript для відкриття та закриття спливаючих вікон:
+            Для відкриття спливаючих вікон з використанням JavaScript, можна використовувати функцію window.open(). Ця функція приймає параметри, такі як URL-адреса, розмір вікна, налаштування тощо. Наприклад:</p>
+        <code class="color-green"> 
+            function openPopupWindow() {
+                var url = "popup.html";
+                var name = "popupWindow";
+                var width = 500;
+                var height = 300;
+                var left = (window.innerWidth - width) / 2;
+                var top = (window.innerHeight - height) / 2;
+                var features = "width=" + width + ", height=" + height + ", left=" + left + ", top=" + top;
+              
+                window.open (url, name, features);
+              }      
+        </code>
+        <p>Для закриття спливаючих вікон можна використовувати функцію window.close(). Наприклад:</p>
+        <code class="color-green"> 
+            function closePopupWindow() {
+                window.close();
+              }
+        </code>
+        <p> Додавання затемнення заднього фону при відображенні модальних вікон:
+            Для створення модальних вікон з затемненням заднього фону, можна застосувати додатковий елемент, який перекриватиме основний контент. Цей елемент може мати фоновий колір з прозорістю або затемнюватися за допомогою CSS-стилів. Наприклад:</p>
+            <code class="color-green">function openModalWindow() {
+                var modal = document.getElementById ("modal");
+                modal.style.display = "block";
+              }
+              
+              function closeModalWindow() {
+                var modal = document.getElementById ("modal");
+                modal.style.display = "none";
+              } </code>
+    </div>
+</div>
+</section>
+
+
+
+
+    </main>
+    
+ <div class="flex just section-link element-animation">
+    <a href="page3.html" class="nav-card ">←</a>
+       
+        <a href="page5.html" class="nav-card font-txt"> → </a>
+       
+ </div>
+
+<footer>
+<p> &copy; Гогуля О.Г / ВПВПС-20-3</p>
+</footer>
+
+<script src="cursova.js"></script>
+</body>
+</html>

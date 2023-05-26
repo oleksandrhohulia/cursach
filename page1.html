@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cursova.css">
+    <link rel="icon" href="icon.svg">
+    <title>Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</title>
+</head>
+<body>
+    <header> 
+            <div class="top-nav element-animation ">
+                <div id="closednav"> 
+                <a class="m-card card-golovna font-txt" href="index.html"> Головна</a>
+                <a class="m-card card-menu font-txt" href="javascript:void(0);" onclick="myFunction()">Меню</a></div>
+                <div id="links">
+                        <div class="flex wrap">
+                        <a href="page1.html" class="m-card font-txt">01. Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</a>
+                        <a href="page2.html" class="m-card font-txt">02. Основи JavaScript для створення інтерактивних елементів</a>
+                        <a href="page3.html" class="m-card font-txt">03. Валідація форм за допомогою JavaScript</a>
+                        <a href="page4.html" class="m-card font-txt">04. Створення спливаючих вікон та модальних вікон з використанням JavaScript</a>
+                        <a href="page5.html" class="m-card font-txt">05. Анімація елементів з використанням JavaScript</a>
+                        <a href="page6.html" class="m-card font-txt">06. Створення інтерактивних кнопок з використанням JavaScript </a>
+                            <a onclick="myFunction()" class="m-card">Х</a>
+                    </div>
+             </div>
+            </div>
+    </header>
+
+    <main> 
+        <section class="section-m section-link">
+
+            <div class="card-holder flex wrap">
+            <span class="font-h1 card card-basis25 green-card element-animation">01.</span>
+            <h1 class=" card card-basis75 violet-card font-h1 element-animation">Вступ до інтерактивних елементів на веб-сайті з використанням JavaScript</h1>
+            </div>
+            <div class="card-holder flex wrap card-basis100"  >
+                <a href="#int" class="card font-link-card card-basis25 element-animation ">01. <br> Визначення інтерактивності <br> на веб-сайті</a>
+                <a href="#rl" class="card font-link-card card-basis25 element-animation">02. <br> Роль JavaScript у створенні <br> інтерактивних елементів</a>
+            </div>
+        </section >
+
+<section id="int" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just"> 
+       <h2 class="card-basis25 font-h2 element-animation " >Визначення <br> інтерактивності <br> на веб-сайті</h2>
+       <div class="card-basis25 font-txt "> 
+        <p>Інтерактивність на веб-сайті означає можливість активної взаємодії між користувачем і самим сайтом. Вона забезпечує користувачам змогу не лише переглядати і споживати інформацію, а й активно впливати на веб-сайт, виконувати дії та отримувати відповіді в реальному часі.</p> 
+        <p>Основними складовими інтерактивності на веб-сайті є наявність елементів, з якими користувач може взаємодіяти, та спосіб їх функціонування. Це можуть бути кнопки, форми, посилання, меню, слайдери, анімації, графіки та багато іншого. Від інтерактивних елементів очікується, що вони будуть реагувати на дії користувача, надавати зворотний зв'язок та забезпечувати зручну навігацію.</p>
+        <p>Один з ключових аспектів інтерактивності - це можливість виконання користувачем дій і отримання результатів майже в режимі реального часу. Наприклад, при натисканні кнопки може відбуватися миттєве переходження на іншу сторінку або виконання певної дії, такої як відправлення форми або відтворення медіа-контенту. Це надає користувачеві відчуття активної участі і контролю над веб-сайтом.</p>
+        <p>Ще одним важливим аспектом інтерактивності є можливість персоналізації та адаптації веб-сайту до індивідуальних потреб користувачів. Наприклад, за допомогою інтерактивних елементів можна налаштувати вигляд та поведінку сайту, відповідно до вибраних налаштувань користувача. Це дозволяє створювати більш персоналізований досвід та забезпечує більшу задоволеність від взаємодії з сайтом.</p>
+        <p>Інтерактивність на веб-сайті має декілька цілей і переваг. Вона покращує користувацький досвід, забезпечує більшу залученість відвідувачів та сприяє більшому залученню аудиторії. Інтерактивні елементи можуть підвищувати увагу, зацікавленість та залишати більш сильний вплив на користувачів, що сприяє покращенню конверсії та досягненню поставлених цілей веб-сайту.</p>
+        <p>Загалом, інтерактивність на веб-сайті забезпечує користувачам активну участь у взаємодії з сайтом, надає їм зручну навігацію, персоналізовані можливості та надзвичайно важливу відповідь на їхні дії. Вона впливає на користувацький досвід, ефективність та успішність веб-сайту, що робить її важливим елементом сучасного веб-розробки.</p>
+    </div>
+</div>
+</section>
+
+<section id="rl" class="section-m  flex wrap element-animation">
+    <div class="text-holder section-txt just "> 
+       <h2 class="card-basis25 font-h2 element-animation" >Роль JavaScript <br> у створенні <br> інтерактивних <br> елементів</h2>
+       <div class="card-basis25 font-txt "> 
+        <p>JavaScript є мовою програмування, яка широко використовується для розробки інтерактивних функцій на веб-сайтах. Вона надає потужні можливості для маніпулювання вмістом сторінки, реагування на події користувача та взаємодії з сервером без перезавантаження сторінки. JavaScript дозволяє додавати динамічні ефекти, анімацію, валідацію форм, спливаючі вікна, фільтри, сортування та багато іншого. Завдяки JavaScript можна створювати багатофункціональні веб-додатки, ігри, мультимедійні презентації та інші інтерактивні елементи, які забезпечують зручну та захоплюючу взаємодію з користувачами.</p>
+    </div>
+</div>
+</section>
+
+    </main>
+    
+ <div class="flex wrap just section-link element-animation">
+    <a href="index.html" class="nav-card ">←</a>
+       
+        <a href="page2.html" class="nav-card font-txt"> → </a>
+       
+ </div>
+
+<footer>
+<p> &copy; Гогуля О.Г / ВПВПС-20-3</p>
+</footer>
+
+<script src="cursova.js"></script>
+</body>
+</html>
